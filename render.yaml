@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: rebolting-hearts-website
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: false
+    headers:
+      - path: /images/*
+        name: Cache-Control
+        value: public, max-age=604800

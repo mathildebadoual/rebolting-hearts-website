@@ -1,1 +1,8 @@
 .DS_Store
+
+# Only publish the images the site uses; full-size originals and Canva slides stay local.
+images/*
+!images/brand/
+!images/photos/
+!images/team/
+!images/sponsors/
