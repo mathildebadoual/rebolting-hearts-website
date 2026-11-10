@@ -48,7 +48,7 @@ The site is fully built but uses placeholder content in a few places — search 
       TBD: exact dates, group size, cost, language. No free-license photo of Gagou itself
       exists online — the hero photo is a generic Moroccan canyon stand-in, clearly labelled;
       swap in real on-site photos once the team has them.
-- [ ] **Contact email** — `contact@reboltinghearts.org` is a placeholder throughout;
+- [ ] **Contact email** — `reboltinghearts@hotmail.com` is a placeholder throughout;
       replace with your real inbox.
 - [ ] **Photos** — `images/*.jpg` are free-license stock photos used as stand-ins (see
       Photo credits below). Replace with real photos of the team, workshops, and events
