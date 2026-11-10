@@ -48,6 +48,8 @@ html { scroll-behavior: smooth; }
 
 [id] { scroll-margin-top: 90px; }
 
+html, body { overflow-x: clip; }
+
 body {
   margin: 0;
   font-family: var(--font-body);
@@ -874,7 +876,7 @@ p { margin: 0 0 1em; }
 
 .team-intro {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
   gap: 56px;
   align-items: center;
   margin-bottom: 72px;
@@ -886,8 +888,8 @@ p { margin: 0 0 1em; }
 }
 
 @media (max-width: 860px) {
-  .team-intro { grid-template-columns: 1fr; gap: 36px; }
-  .team-collage { max-width: 440px; margin: 0 auto; }
+  .team-intro { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  .team-collage { width: 100%; max-width: 440px; margin: 0 auto; }
 }
 
 /* 7 members: centre the last row */
@@ -1007,7 +1009,10 @@ p { margin: 0 0 1em; }
 }
 
 @media (max-width: 760px) {
-  .sponsor-logo-grid { grid-template-columns: repeat(2, 1fr); }
+  .sponsor-logo-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  /* taller tiles + less padding so square logos (FFME) stay readable on phones */
+  .sponsor-logo-grid .sponsor-logo { aspect-ratio: 4 / 3; padding: 10px; }
+  .sponsor-logo-grid .sponsor-logo--real { padding: 12px; }
 }
 
 .sponsor-logo {
