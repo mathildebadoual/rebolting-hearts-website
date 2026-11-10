@@ -85,3 +85,12 @@ GitHub, then enable Pages on the `main` branch in the repo settings.
 The Ulule buttons link to the public campaign URL,
 https://www.ulule.com/rebolting-hearts-workshops-for-women/ — it only resolves once the
 campaign is published. Don't put the private `/preview?token=...` link on the site.
+
+## French version (`fr/`)
+
+The French pages in `fr/` are generated — don't edit them by hand.
+
+1. Edit the English pages as usual.
+2. Add or update the French text in `i18n/fr.py` (English sentence → French sentence).
+3. Run `python3 i18n/build_fr.py`. It rebuilds every page in `fr/` and lists any English
+   text that still has no translation.
